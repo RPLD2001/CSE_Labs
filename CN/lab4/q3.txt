@@ -1,0 +1,10 @@
+a>
+It will only capture udp packets from port 520 i.e the traafic of udp packets from port 520 would be captured by this expression
+b>
+the -x in the tcpdump expression shows the packet's contents in both hex and ascii 
+the -s in the tcpdump defines the snaplength or size of the capture in bytes.
+Here -s 120 means 120 bytes is the size of capture and ip proto 89 defines that ip protocol id is 89
+c>
+the definition of x and s are same as above . Here the capture length of packets is 70 bytes and host ip address should be addr1 or addr2 or addr3 from where the packets are being captured.
+d>
+Again the definition of x and s are same as above and the capture length is 70 bits and the traffic beign captured from host has the ip address as addr1 and no packets to be captured from host ip address addr2. 
