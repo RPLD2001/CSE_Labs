@@ -28,6 +28,6 @@ void executeFunc(char* dir, int depth){
 }
 
 int main(){
-	executeFunc("/home/student/Desktop/200905052/lab2os", 0);
+	executeFunc(".", 0);
 	return 0;
 }
