@@ -28,7 +28,7 @@ int main()
 	}
 
 	printf("\nENTER STRING\t");
-	gets(ch);
+	fgets(ch,sizeof(ch),stdin);
 	ch[strlen(ch)]='\0';
 	write(sockfd,ch,strlen(ch));
 	printf("STRING SENT BACK FROM SERVER IS .....");

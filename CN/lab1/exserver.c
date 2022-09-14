@@ -26,7 +26,7 @@ int main()
 		char buffer[256];
 		printf("server waiting");
 
-		clilen=sizeof(clilen);
+		clilen=sizeof(cliaddr);
 		newsockfd=accept(sockfd,(struct sockaddr*)&cliaddr,&clilen);
 
 		n=read(newsockfd,buffer,sizeof(buffer));
