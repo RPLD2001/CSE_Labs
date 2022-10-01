@@ -1,0 +1,1 @@
+If we run ping 127.0.0.1 and try to capture icmp packets on tcpdump host,NO, it wont catch the packets dont leave the network layer in loopback but while using specific IP, tcpdump capturs packets as the packets are entering through network interface. 

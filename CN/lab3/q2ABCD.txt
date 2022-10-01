@@ -1,0 +1,31 @@
+A>
+a. source port number : 49302
+b. destination port number : 42
+c. The total length of user datagram : 48 Bytes
+d. the length of the data : 40 bytes
+e.Source IP:172.16.48.49
+  destination IP:172.16.10.302
+f. DNS(Domain name System)
+g. Checksum is not calculated : 0x8d4e
+
+B>
+Source IP:172.16.48.49
+destination IP:172.16.10.302
+
+Address in response message
+Source IP:172.16.10.302
+destination IP:172.16.48.49
+
+C>
+source port number : 49302
+destination port number : 42
+
+Response message
+source port number : 42
+destination port number : 49302
+
+Well port number : 42
+
+D> 
+Length of first packet : 48 bytes
+Number of bytes carried by 1st payload: 40 bytes
