@@ -23,7 +23,11 @@ entry SymTab[100];
 global globe[20]; 
 int count=0,num=0; //No. of symbol table entries & preprocessor directives
 
+<<<<<<< HEAD
 void RemoveCommentsWs(FILE *fptr1,FILE *fptr2)
+=======
+void RemoveCommentWs(FILE *fptr1,FILE *fptr2)
+>>>>>>> a0870d672dc298e39bb10d70a7bab5df91d7435e
 { 
 	char ch=fgetc(fptr1),ch2;
 	for (int i=0;i<num;i++) 
@@ -126,7 +130,11 @@ void PreProcremove(FILE *fptr1,char src[],FILE *fptr2)
 	}
 }
 
+<<<<<<< HEAD
 int keywordComp(char buf[])
+=======
+int compKeywords(char buf[])
+>>>>>>> a0870d672dc298e39bb10d70a7bab5df91d7435e
 {	
 	for(int i=0;i<32;i++) 
 		if(strcmp(buf,keywords[i])==0) 
@@ -143,7 +151,11 @@ int compSymbols(char ch)
 
 char inputOutput[6][10]={"printf","scanf","gets","puts","getline","putline"};
 
+<<<<<<< HEAD
 int inputOrderComputer(char buf[])
+=======
+int compInputOutput(char buf[])
+>>>>>>> a0870d672dc298e39bb10d70a7bab5df91d7435e
 {	
 	for(int i=0;i<32;i++) 
 		if(strcmp(buf,inputOutput[i])==0) 
@@ -258,7 +270,11 @@ void getNextToken(FILE *fptr1,FILE *fptr2)
 				ch2=fgetc(fptr1); 
 			}
 			buf[i]='\0';
+<<<<<<< HEAD
 			if (keywordComp(buf)==1) //Keyword
+=======
+			if (compKeywords(buf)==1) //Keyword
+>>>>>>> a0870d672dc298e39bb10d70a7bab5df91d7435e
 			{ 
 				t1.row=r; 
 				t1.col=(--c); 
@@ -270,7 +286,11 @@ void getNextToken(FILE *fptr1,FILE *fptr2)
 				t2.row=r; t2.col=(--c); 
 				strcpy(t2.token_name,"id"); printToken(t2,fptr2);
 				strcpy(SymTab[count].lexeme,buf); char str[2];
+<<<<<<< HEAD
 				if (inputOrderComputer(buf)==1) 
+=======
+				if (compInputOutput(buf)==1) 
+>>>>>>> a0870d672dc298e39bb10d70a7bab5df91d7435e
 				{ 
 						c+=strlen(buf); 
 						ch=ch2; 
@@ -367,7 +387,11 @@ void main()
 	fclose(fptr2);
 	fptr1=fopen("file1.txt","r"); 
 	fptr2=fopen("file2.txt","w");
+<<<<<<< HEAD
 	RemoveCommentsWs(fptr1,fptr2); 
+=======
+	RemoveCommentWs(fptr1,fptr2); 
+>>>>>>> a0870d672dc298e39bb10d70a7bab5df91d7435e
 	fclose(fptr1); 
 	fclose(fptr2);
 	fptr1=fopen("file2.txt","r"); 
