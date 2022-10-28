@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+int add(int a, int b)
+{
+=======
 int add(int a,int b){
+>>>>>>> a0870d672dc298e39bb10d70a7bab5df91d7435e
  int sum;
  sum=a+b;
  return sum;

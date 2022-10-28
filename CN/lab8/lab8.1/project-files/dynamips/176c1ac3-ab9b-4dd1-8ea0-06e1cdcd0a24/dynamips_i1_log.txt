@@ -1,0 +1,12 @@
+Sep 28 09:11:42.804 HYPERVISOR: Release 0.2.22-amd64/Linux (tag 2022052400)
+Sep 28 09:11:42.804 HYPERVISOR: Started on TCP port = 44785.
+Sep 28 09:11:42.814 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 28 09:11:42.814 HYPERVISOR: exec_cmd: hypervisor working_dir /home/student/Desktop/200905052/CSE_Labs/CN/lab8/lab8.1/project-files/dynamips 
+Sep 28 09:11:42.814 GENERAL: working_dir=/home/student/Desktop/200905052/CSE_Labs/CN/lab8/lab8.1/project-files/dynamips
+Sep 28 09:11:42.815 HYPERVISOR: exec_cmd: nio_bridge create Hub1 
+Sep 28 09:11:42.952 HYPERVISOR: exec_cmd: nio create_udp udp-b545b8af-40db-4ba0-a990-ae114fd91bd1 10001 127.0.0.1 10000 
+Sep 28 09:11:42.952 HYPERVISOR: exec_cmd: nio_bridge add_nio Hub1 udp-b545b8af-40db-4ba0-a990-ae114fd91bd1 
+Sep 28 09:14:37.058 HYPERVISOR: exec_cmd: nio_bridge delete Hub1 
+Sep 28 09:14:37.065 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 28 09:14:37.520 HYPERVISOR: Stopped.
+Sep 28 09:14:37.520 GENERAL: reset done.

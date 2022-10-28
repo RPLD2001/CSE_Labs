@@ -11,7 +11,11 @@ int main()
 	fptr1=fopen(filename,"r");
 	if(fptr1==NULL)
 	{
+<<<<<<< HEAD
+		printf("Cannot open file ");
+=======
 		printf("Cannot open file");
+>>>>>>> a0870d672dc298e39bb10d70a7bab5df91d7435e
 		exit(0);
 	}
 	printf("Enter name of file to be written to ");
@@ -29,4 +33,8 @@ int main()
 
 	return 0;
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a0870d672dc298e39bb10d70a7bab5df91d7435e
