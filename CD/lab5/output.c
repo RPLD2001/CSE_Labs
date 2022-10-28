@@ -1,10 +1,11 @@
+#include<stdio.h>
 
+int main(){
+	int N,Q;
+	WRITE("Enter people strength:");
+	READ("%d",&N);
+	WRITE("Enter Hall Strength:");
+	READ("%d",&q);
 
-
-
-WRITE
-READ
-WRITE
-READ
-
-
+	return 0;
+}

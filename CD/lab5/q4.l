@@ -5,7 +5,6 @@
 %%
 printf {pcount++; fprintf(yyout,"WRITE");}
 scanf {scount++; fprintf(yyout,"READ");}
-.
 %%
 
 int yywrap(){}
